@@ -91,6 +91,7 @@ spring:
 2. 服务器默认情况下是以8080端口，在调试的时候，要保证vps的防火墙开启了8080端口，否则无法访问，排查起来麻烦的很。
 3. 指定spring boot为80端口 `--server.port=80`
 `java -jar weixin-java-miniapp-love-1.0.0-local.jar --server.port=80`
+4. 服务器运行后，如果数据库main_info表中有数据，可以访问：`http://wx.whwsxx.cn/wx/info?uid=1'，可以查看数据内容.
 
 ## Apache2转发
 直接使用spring boot的情况下，搞了好久都无法绑定ssl证书，即使指定443端口也无效，微信小程序绑定的域名均为ssl，使用apache2作为前面的代理服务器，方便后面配置SSL证书
