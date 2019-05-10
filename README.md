@@ -16,9 +16,9 @@
 
 ```
 appid:wx77856a389b827dee
-secret:f6cc28ce661594bdfd7e46e2a24f6742
-Token:whwsxx2019
-EncodingAESKey:APJVp5WTr0pRVWurtWOGMBFXkifMa2ZNUixPoV6Qx4T
+secret:f6cc28cbdfd7e46e2a24f6742
+Token:whws2019
+EncodingAESKey:APJVp5WTrtWOGMBFXkifMa2ZNUixPoV6Qx4T
 ```
 
 **如果提示Token无法验证(消息服务，非消息服务无需关心)**
