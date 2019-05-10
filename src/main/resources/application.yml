@@ -8,19 +8,19 @@ wx:
   miniapp:
     configs:
         - appid: wx77856a389b827dee
-          secret: f6cc28ce661594bdfd7e46e2a24f6742
-          token: whwsxx2019
-          aesKey: APJVp5WTr0pRVWurtWOGMBFXkifMa2ZNUixPoV6Qx4T
+          secret: f6cc28cefd7e46e2a24f6742
+          token: whws2019
+          aesKey: APJVp5WTrXkifMa2ZNUixPoV6Qx4T
           msgDataFormat: JSON
 
 spring:
     jpa:
         hibernate:
-            ddl-auto: update
+            ddl-auto: create
     datasource:
         url: jdbc:mysql://localhost:3306/invite
         username: root
-        password: whws2019
+        password: 
     servlet:
         multipart:
             max-file-size: 10MB
