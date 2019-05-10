@@ -18,7 +18,7 @@
 appid:wx77856a389b827dee
 secret:f6cc28cbdfd7e46e2a24f6742
 Token:whws2019
-EncodingAESKey:APJVp5WTrtWOGMBFXkifMa2ZNUixPoV6Qx4T
+EncodingAESKey:APJVp5WTrtkifMa2ZNUixPoV6Qx4T
 ```
 
 **如果提示Token无法验证(消息服务，非消息服务无需关心)**
@@ -67,6 +67,14 @@ flush privileges;
 
 ```
 INSERT INTO `invite`.`main_info` (`id`, `address`, `app_name`, `appid`, `code`, `date`, `he`, `he_tel`, `hotel`, `lat`, `lng`, `she`, `she_tel`, `uid`) VALUES ('1', '武汉阳逻经济开发区汽渡路413号', '娲石学校', 'wx77856a389b827dee', '434000', '', '座机', '13419586088', '武汉市娲石技术学校', '30.628050', '114.574790', '胡老师', '027-59204559', '1');
+```
+** 数据库重要提醒 **
+默认情况下，配置文件application.yml中数据库有一项配置，自动生成数据库表结构，全套程序配置好后，需要将create改为update，否则每次启动项目，将重新生成数据库，之前的数据会全部丢失。
+```
+spring:
+    jpa:
+        hibernate:
+            ddl-auto: create
 ```
 
 ## maven打包
